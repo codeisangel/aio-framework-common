@@ -3,26 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>pom</packaging>
     <groupId>cn.aio1024.common</groupId>
     <artifactId>aio-framework-common</artifactId>
-    <packaging>pom</packaging>
     <version>${revision}</version>
     <modules>
         <module>spring-basic</module>
         <module>domain-basic</module>
-        <module>example</module>
     </modules>
+    <description>模块封装模块</description>
+    <url>https://github.com/codeisangel/aio-framework-common</url>
 
     <issueManagement>
         <system>Github Issue</system>
-        <url>https://github.com/codeisangel/aio-runtime/issues</url>
+        <url>https://github.com/codeisangel/aio-framework-common/issues</url>
     </issueManagement>
 
     <scm>
-        <connection>scm:git@github.com:codeisangel/aio-runtime.git</connection>
-        <developerConnection>scm:git@github.com:codeisangel/aio-runtime.git</developerConnection>
-        <url>git@github.com:codeisangel/aio-runtime.git</url>
+        <connection>scm:git@github.com:codeisangel/aio-framework-common.git</connection>
+        <developerConnection>scm:git@github.com:codeisangel/aio-framework-common.git</developerConnection>
+        <url>git@github.com:codeisangel/aio-framework-common.git</url>
     </scm>
 
     <licenses>
@@ -41,7 +41,7 @@
 
 
     <properties>
-        <revision>1.0.0</revision>
+        <revision>1.0.1</revision>
         <spring-boot.version>2.6.5</spring-boot.version>
         <lombok.version>1.18.24</lombok.version>
         <lang3.version>3.9</lang3.version>
@@ -139,8 +139,6 @@
                         <configuration>
                             <publishingServerId>central</publishingServerId>
                             <excludeArtifacts>
-                                <excludeArtifact>example</excludeArtifact>
-                                <excludeArtifact>spring-boot-example</excludeArtifact>
                             </excludeArtifacts>
                         </configuration>
                     </plugin>
